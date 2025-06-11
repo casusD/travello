@@ -14,7 +14,7 @@ const Header = async ({ params }: PageProps) => {
 	const t = await getDictionary(lang);
 
 	return (
-		<header className='relative px-6 lg:px-40 container mx-auto flex justify-between items-center p-4 bg-white dark:bg-gray-900'>
+		<header className='relative px-6 lg:px-40 container mx-auto flex justify-between items-center p-4 bg-white'>
 			<Image
 				src='/heroBG.svg'
 				alt='hero-image'

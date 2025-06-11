@@ -23,7 +23,7 @@ export default async function Home({ params }: PageProps) {
 	return (
 		<>
 			<Header params={params} />
-			<main className='min-h-screen text-gray-900 dark:text-gray-100'>
+			<main className='min-h-screen'>
 				<Hero t={t.hero} />
 				<Services t={t.services} />
 				<Destinations t={t.destinations} />
