@@ -46,7 +46,7 @@ export default function LanguageSwitcher({
 	};
 
 	return (
-		<div className='relative'>
+		<div className='relative text-gray-900'>
 			<button
 				onClick={() => setIsOpen(!isOpen)}
 				className='flex items-center gap-2 p-2 px-3 rounded-lg text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200'
