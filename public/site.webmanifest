@@ -1,0 +1,53 @@
+{
+	"name": "Travello - Best Travel Agency",
+	"short_name": "Travello",
+	"description": "Premium travel agency offering the best destinations worldwide. Book your dream trip with expert guidance.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#DF6951",
+	"orientation": "portrait-primary",
+	"scope": "/",
+	"lang": "en",
+	"icons": [
+		{
+			"src": "/favicon.ico",
+			"sizes": "16x16 32x32 48x48",
+			"type": "image/x-icon",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/favicon-16x16.png",
+			"sizes": "16x16",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/favicon-32x32.png",
+			"sizes": "32x32",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/apple-touch-icon.png",
+			"sizes": "180x180",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/logo.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any maskable"
+		}
+	],
+	"categories": ["travel", "business", "tourism"],
+	"screenshots": [
+		{
+			"src": "/og-image.jpg",
+			"sizes": "1200x630",
+			"type": "image/jpeg",
+			"form_factor": "wide"
+		}
+	]
+}

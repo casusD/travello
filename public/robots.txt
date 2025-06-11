@@ -1,0 +1,36 @@
+# robots.txt for https://travello-seven.vercel.app
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://travello-seven.vercel.app/sitemap.xml
+
+# Specific rules for major crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Block crawling of admin or private areas (if any)
+# User-agent: *
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow crawling of images and CSS/JS
+User-agent: *
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.svg
+Allow: *.webp
+
+# Crawl-delay (optional, adjust as needed)
+# Crawl-delay: 1 
