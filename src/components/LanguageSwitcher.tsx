@@ -46,10 +46,10 @@ export default function LanguageSwitcher({
 	};
 
 	return (
-		<div className='relative text-gray-900'>
+		<div className='relative'>
 			<button
 				onClick={() => setIsOpen(!isOpen)}
-				className='flex items-center gap-2 p-2 px-3 rounded-lg text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200'
+				className='flex items-center gap-2 p-2 px-3 rounded-lg text-gray-900 hover:bg-gray-200 transition-all duration-200'
 				aria-label={dictionary.switch}
 			>
 				<span className='font-medium'>
@@ -73,15 +73,15 @@ export default function LanguageSwitcher({
 			</button>
 
 			{isOpen && (
-				<div className='absolute top-full right-0 mt-1 w-38 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-1000'>
+				<div className='absolute top-full right-0 mt-1 w-38 bg-white rounded-lg shadow-lg border border-gray-200 z-1000'>
 					{languages.map(language => (
 						<button
 							key={language.code}
 							onClick={() => handleLanguageChange(language.code)}
-							className={`z-1000 w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-150 first:rounded-t-lg last:rounded-b-lg ${
+							className={`z-1000 w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-gray-50 transition-colors duration-150 first:rounded-t-lg last:rounded-b-lg ${
 								currentLang === language.code
-									? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400'
-									: 'text-gray-700 dark:text-gray-300'
+									? 'bg-blue-50 text-blue-600'
+									: 'text-gray-700'
 							}`}
 						>
 							<span className='font-medium'>{language.name}</span>
