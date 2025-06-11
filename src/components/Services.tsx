@@ -1,23 +1,38 @@
-import { getDictionary } from '@/lib/getDictionary';
 import Image from 'next/image';
 
 interface PageProps {
-	params: {
-		lang: string;
+	t: {
+		title: string;
+		subtitle: string;
+		category: {
+			calculatedWeather: {
+				title: string;
+				description: string;
+			};
+			bestFlights: {
+				title: string;
+				description: string;
+			};
+			localEvents: {
+				title: string;
+				description: string;
+			};
+			customization: {
+				title: string;
+				description: string;
+			};
+		};
 	};
 }
 
-const Services = async ({ params }: PageProps) => {
-	const { lang } = await params;
-
-	const t = await getDictionary(lang);
+const Services = async ({ t }: PageProps) => {
 	return (
 		<section id='services' className='relative container mx-auto px-40 py-10'>
 			<h2 className='my-5 text-center text-[#5E6282] font-bold text-lg'>
-				{t.services.title}
+				{t.title}
 			</h2>
 			<h3 className='text-center text-[#14183E] font-bold text-5xl'>
-				{t.services.subtitle}
+				{t.subtitle}
 			</h3>
 
 			<div className='flex justify-between mt-20'>
@@ -30,10 +45,10 @@ const Services = async ({ params }: PageProps) => {
 						className='w-[100px] h-[84px]'
 					/>
 					<h4 className='text-[#1E1D4C] font-semibold text-xl mt-3'>
-						{t.services.category.calculatedWeather.title}
+						{t.category.calculatedWeather.title}
 					</h4>
 					<p className='text-center w-[181px] text-[16px] text-[#5E6282]'>
-						{t.services.category.calculatedWeather.description}
+						{t.category.calculatedWeather.description}
 					</p>
 				</div>
 
@@ -46,10 +61,10 @@ const Services = async ({ params }: PageProps) => {
 						className='w-[100px] h-[84px]'
 					/>
 					<h4 className='text-[#1E1D4C] font-semibold text-xl mt-3'>
-						{t.services.category.bestFlights.title}
+						{t.category.bestFlights.title}
 					</h4>
 					<p className='text-center w-[181px] text-[16px] text-[#5E6282]'>
-						{t.services.category.bestFlights.description}
+						{t.category.bestFlights.description}
 					</p>
 				</div>
 
@@ -62,10 +77,10 @@ const Services = async ({ params }: PageProps) => {
 						className='w-[100px] h-[84px]'
 					/>
 					<h4 className='text-[#1E1D4C] font-semibold text-xl mt-3'>
-						{t.services.category.localEvents.title}
+						{t.category.localEvents.title}
 					</h4>
 					<p className='text-center w-[181px] text-[16px] text-[#5E6282]'>
-						{t.services.category.localEvents.description}
+						{t.category.localEvents.description}
 					</p>
 				</div>
 
@@ -78,10 +93,10 @@ const Services = async ({ params }: PageProps) => {
 						className='w-[100px] h-[84px]'
 					/>
 					<h4 className='text-[#1E1D4C] font-semibold text-xl mt-3'>
-						{t.services.category.customization.title}
+						{t.category.customization.title}
 					</h4>
 					<p className='text-center w-[181px] text-[16px] text-[#5E6282]'>
-						{t.services.category.customization.description}
+						{t.category.customization.description}
 					</p>
 				</div>
 			</div>

@@ -1,17 +1,30 @@
-import { getDictionary } from '@/lib/getDictionary';
 import Image from 'next/image';
 
 interface PageProps {
-	params: {
-		lang: string;
+	t: {
+		title: string;
+		subtitle: string;
+		list: {
+			rome: {
+				title: string;
+				description: string;
+				price: string;
+			};
+			london: {
+				title: string;
+				description: string;
+				price: string;
+			};
+			europe: {
+				title: string;
+				description: string;
+				price: string;
+			};
+		};
 	};
 }
 
-const Destinations = async ({ params }: PageProps) => {
-	const { lang } = await params;
-
-	const t = await getDictionary(lang);
-
+const Destinations = async ({ t }: PageProps) => {
 	return (
 		<section
 			id='destinations'
@@ -25,55 +38,55 @@ const Destinations = async ({ params }: PageProps) => {
 				height={100}
 			/>
 			<h2 className='my-5 text-center text-[#5E6282] font-bold text-lg'>
-				{t.destinations.title}
+				{t.title}
 			</h2>
 			<h3 className='text-center text-[#14183E] font-bold text-5xl'>
-				{t.destinations.subtitle}
+				{t.subtitle}
 			</h3>
 
 			<div className='flex justify-center gap-10 mt-[4rem]'>
 				<div className='w-[315px] h-[457px] rounded-[24px] bg-[url(/rome.png)] bg-[size:150%_73%] bg-no-repeat bg-[position:center_top] relative shadow-lg shadow-black-300/30 bg-white'>
 					<div className='absolute bottom-[16%] left-3 flex justify-between w-[290px]'>
 						<p className='text-lg text-[#5E6282] font-medium'>
-							{t.destinations.list.rome.title}
+							{t.list.rome.title}
 						</p>
 						<p className='text-lg text-[#5E6282] font-medium'>
-							{t.destinations.list.rome.price}
+							{t.list.rome.price}
 						</p>
 					</div>
 					<p className='absolute bottom-[7%] left-3 flex items-center gap-2 mt-3 text-[#5E6282] text-[16px]'>
 						<Image src='/geolocation.svg' alt='star' width={20} height={20} />
-						{t.destinations.list.rome.description}
+						{t.list.rome.description}
 					</p>
 				</div>
 
 				<div className='w-[315px] h-[457px] rounded-[24px] bg-[url(/london.png)] bg-[size:150%_73%] bg-no-repeat bg-[position:center_top] relative shadow-lg shadow-black-300/30 bg-white'>
 					<div className='absolute bottom-[16%] left-3 flex justify-between w-[290px]'>
 						<p className='text-lg text-[#5E6282] font-medium'>
-							{t.destinations.list.london.title}
+							{t.list.london.title}
 						</p>
 						<p className='text-lg text-[#5E6282] font-medium'>
-							{t.destinations.list.london.price}
+							{t.list.london.price}
 						</p>
 					</div>
 					<p className='absolute bottom-[7%] left-3 flex items-center gap-2 mt-3 text-[#5E6282] text-[16px]'>
 						<Image src='/geolocation.svg' alt='star' width={20} height={20} />
-						{t.destinations.list.london.description}
+						{t.list.london.description}
 					</p>
 				</div>
 
 				<div className='w-[315px] h-[457px] rounded-[24px] bg-[url(/europe.png)] bg-[size:150%_73%] bg-no-repeat bg-[position:center_top] relative shadow-lg shadow-black-300/30 bg-white'>
 					<div className='absolute bottom-[16%] left-3 flex justify-between w-[290px]'>
 						<p className='text-lg text-[#5E6282] font-medium'>
-							{t.destinations.list.europe.title}
+							{t.list.europe.title}
 						</p>
 						<p className='text-lg text-[#5E6282] font-medium'>
-							{t.destinations.list.europe.price}
+							{t.list.europe.price}
 						</p>
 					</div>
 					<p className='absolute bottom-[7%] left-3 flex items-center gap-2 mt-3 text-[#5E6282] text-[16px]'>
 						<Image src='/geolocation.svg' alt='star' width={20} height={20} />
-						{t.destinations.list.europe.description}
+						{t.list.europe.description}
 					</p>
 				</div>
 			</div>

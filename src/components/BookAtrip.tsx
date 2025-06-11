@@ -1,28 +1,35 @@
-import { getDictionary } from '@/lib/getDictionary';
 import Image from 'next/image';
 
 interface PageProps {
-	params: {
-		lang: string;
+	t: {
+		title: string;
+		subtitle: string;
+		list: {
+			chooseDestination: {
+				title: string;
+				description: string;
+			};
+			makePayment: {
+				title: string;
+				description: string;
+			};
+			reachAirport: {
+				title: string;
+				description: string;
+			};
+		};
 	};
 }
 
-const BookAtrip = async ({ params }: PageProps) => {
-	const { lang } = await params;
-
-	const t = await getDictionary(lang);
+const BookAtrip = async ({ t }: PageProps) => {
 	return (
 		<section
 			id='bookAtrip'
 			className='container mx-auto px-40 py-10 flex justify-between mt-20'
 		>
 			<div className='w-[45%]'>
-				<h2 className='my-5 text-[#5E6282] font-bold text-lg'>
-					{t.bookAtrip.title}
-				</h2>
-				<h3 className='text-[#14183E] font-bold text-5xl'>
-					{t.bookAtrip.subtitle}
-				</h3>
+				<h2 className='my-5 text-[#5E6282] font-bold text-lg'>{t.title}</h2>
+				<h3 className='text-[#14183E] font-bold text-5xl'>{t.subtitle}</h3>
 
 				<div className='flex flex-col gap-[2.5rem] mt-10'>
 					<div className='flex items-center gap-5'>
@@ -34,10 +41,10 @@ const BookAtrip = async ({ params }: PageProps) => {
 						/>
 						<div>
 							<h4 className='text-[16px] font-bold text-[#5E6282]'>
-								{t.bookAtrip.list.chooseDestination.title}
+								{t.list.chooseDestination.title}
 							</h4>
 							<p className='text-[#5E6282] text-[16px] font-regular'>
-								{t.bookAtrip.list.chooseDestination.description}
+								{t.list.chooseDestination.description}
 							</p>
 						</div>
 					</div>
@@ -51,10 +58,10 @@ const BookAtrip = async ({ params }: PageProps) => {
 						/>
 						<div>
 							<h4 className='text-[16px] font-bold text-[#5E6282]'>
-								{t.bookAtrip.list.makePayment.title}
+								{t.list.makePayment.title}
 							</h4>
 							<p className='text-[#5E6282] text-[16px] font-regular'>
-								{t.bookAtrip.list.makePayment.description}
+								{t.list.makePayment.description}
 							</p>
 						</div>
 					</div>
@@ -68,10 +75,10 @@ const BookAtrip = async ({ params }: PageProps) => {
 						/>
 						<div>
 							<h4 className='text-[16px] font-bold text-[#5E6282]'>
-								{t.bookAtrip.list.reachAirport.title}
+								{t.list.reachAirport.title}
 							</h4>
 							<p className='text-[#5E6282] text-[16px] font-regular'>
-								{t.bookAtrip.list.reachAirport.description}
+								{t.list.reachAirport.description}
 							</p>
 						</div>
 					</div>

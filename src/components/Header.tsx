@@ -4,14 +4,13 @@ import Link from 'next/link';
 import LanguageSwitcher from './LanguageSwitcher';
 
 interface PageProps {
-	params: {
+	params: Promise<{
 		lang: string;
-	};
+	}>;
 }
 
 const Header = async ({ params }: PageProps) => {
 	const { lang } = await params;
-
 	const t = await getDictionary(lang);
 
 	return (

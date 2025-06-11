@@ -10,9 +10,9 @@ import Testimonials from '@/components/Testimonials';
 import { getDictionary } from '@/lib/getDictionary';
 
 interface PageProps {
-	params: {
+	params: Promise<{
 		lang: string;
-	};
+	}>;
 }
 
 export default async function Home({ params }: PageProps) {
@@ -24,14 +24,14 @@ export default async function Home({ params }: PageProps) {
 		<>
 			<Header params={params} />
 			<main className='min-h-screen text-gray-900 dark:text-gray-100'>
-				<Hero params={params} />
-				<Services params={params} />
-				<Destinations params={params} />
-				<BookAtrip params={params} />
+				<Hero t={t.hero} />
+				<Services t={t.services} />
+				<Destinations t={t.destinations} />
+				<BookAtrip t={t.bookAtrip} />
 				<Testimonials t={t.testimonials} />
 				<Logos />
-				<Contact params={params} />
-				<Footer params={params} />
+				<Contact t={t.contact} />
+				<Footer t={t.footer} />
 			</main>
 		</>
 	);
