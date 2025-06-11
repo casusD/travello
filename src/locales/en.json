@@ -1,0 +1,118 @@
+{
+	"header": {
+		"desitnations": "Destinations",
+		"hotels": "Hotels",
+		"flights": "Flights",
+		"bookings": "Bookings",
+		"login": "Login",
+		"signup": "Sign up"
+	},
+	"theme": {
+		"light": "Light mode",
+		"dark": "Dark mode"
+	},
+	"language": {
+		"switch": "Switch language",
+		"english": "English",
+		"russian": "Русский"
+	},
+	"hero": {
+		"subtitle": "Best Destinations around the world",
+		"title": "Travel, enjoy and live a new and full life",
+		"description": "Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.",
+		"button": "Find out more",
+		"demo": "Play demo"
+	},
+	"services": {
+		"title": "CATEGORY",
+		"subtitle": "We Offer Best Services",
+		"category": {
+			"calculatedWeather": {
+				"title": "Calculated Weather",
+				"description": "Built Wicket longer admire do barton vanity itself do in it."
+			},
+			"bestFlights": {
+				"title": "Best Flights",
+				"description": "Engrossed listening. Park gate sell they west hard for the."
+			},
+			"localEvents": {
+				"title": "Local Events",
+				"description": "Barton vanity itself do in it. Preferd to men it engrossed listening."
+			},
+			"customization": {
+				"title": "Customization",
+				"description": "We deliver outsourced aviation services for military customers"
+			}
+		}
+	},
+	"destinations": {
+		"title": "Top Selling",
+		"subtitle": "Top Destinations",
+		"list": {
+			"rome": {
+				"title": "Rome, Italty",
+				"description": "10 Days Trip",
+				"price": "$5,42k"
+			},
+			"london": {
+				"title": "London, UK",
+				"description": "12 Days Trip",
+				"price": "$4,2k"
+			},
+			"europe": {
+				"title": "Full Europe",
+				"description": "28 Days Trip",
+				"price": "$15k"
+			}
+		}
+	},
+	"bookAtrip": {
+		"title": "Easy and Fast",
+		"subtitle": "Book Your Next Trip In 3 Easy Steps",
+		"list": {
+			"chooseDestination": {
+				"title": "Choose Destination",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+			},
+			"makePayment": {
+				"title": "Make Payment",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+			},
+			"reachAirport": {
+				"title": "Reach Airport on Selected Date",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+			}
+		}
+	},
+	"testimonials": {
+		"title": "Testimonials",
+		"subtitle": "What People Say About Us."
+	},
+	"contact": {
+		"title": "Subscribe to get information, latest news and other interesting offers about Jadoo",
+		"email": "Your email",
+		"button": "Subscribe"
+	},
+	"footer": {
+		"description": "Book your trip in minute, get full Control for much longer.",
+		"company": {
+			"title": "Company",
+			"about": "About",
+			"careers": "Careers",
+			"mobile": "Mobile"
+		},
+		"contact": {
+			"title": "Contact",
+			"help": "Help/FAQ",
+			"press": "Press",
+			"affilates": "Affilates"
+		},
+		"more": {
+			"title": "More",
+			"airlinefees": "Airlinefees",
+			"airline": "Airline",
+			"lowfaretips": "Low fare tips"
+		},
+		"discover": "Discover our app"
+	}
+}

@@ -1,0 +1,118 @@
+{
+	"header": {
+		"desitnations": "Направления",
+		"hotels": "Отели",
+		"flights": "Перелеты",
+		"bookings": "Бронирования",
+		"login": "Войти",
+		"signup": "Зарегистрироваться"
+	},
+	"theme": {
+		"light": "Светлая тема",
+		"dark": "Темная тема"
+	},
+	"language": {
+		"switch": "Переключить язык",
+		"english": "English",
+		"russian": "Русский"
+	},
+	"hero": {
+		"subtitle": "Лучшие направления во всем мире",
+		"title": "Путешествуйте, наслаждайтесь и живите новой и полной жизнью",
+		"description": "Построенный Уикет больше не восхищает Бартона, как и он сам. Предпочитает слушать спортсменов. Парк-Гейт продают на Запад.",
+		"button": "Найти больше",
+		"demo": "Посмотреть демо"
+	},
+	"services": {
+		"title": "КАТЕГОРИИ",
+		"subtitle": "Мы предлагаем лучшие услуги",
+		"category": {
+			"calculatedWeather": {
+				"title": "Рассчитанная погода",
+				"description": "Построенный Уикет больше не восхищает Бартона, как и он сам. Предпочитает слушать спортсменов. Парк-Гейт продают на Запад."
+			},
+			"bestFlights": {
+				"title": "Лучшие перелеты",
+				"description": "Построенный Уикет больше не восхищает Бартона, как и он сам. Предпочитает слушать спортсменов. Парк-Гейт продают на Запад."
+			},
+			"localEvents": {
+				"title": "Локальные события",
+				"description": "Построенный Уикет больше не восхищает Бартона, как и он сам. Предпочитает слушать спортсменов. Парк-Гейт продают на Запад."
+			},
+			"customization": {
+				"title": "Кастомизация",
+				"description": "Построенный Уикет больше не восхищает Бартона, как и он сам. Предпочитает слушать спортсменов. Парк-Гейт продают на Запад."
+			}
+		}
+	},
+	"destinations": {
+		"title": "Топ продаж",
+		"subtitle": "Топ направления",
+		"list": {
+			"rome": {
+				"title": "Рим, Италия",
+				"description": "10 дней поездки",
+				"price": "$5,42k"
+			},
+			"london": {
+				"title": "Лондон, Великобритания",
+				"description": "12 дней поездки",
+				"price": "$4,2k"
+			},
+			"europe": {
+				"title": "Полная Европа",
+				"description": "28 дней поездки",
+				"price": "$15k"
+			}
+		}
+	},
+	"bookAtrip": {
+		"title": "Легко и быстро",
+		"subtitle": "Забронируйте свою следующую поездку за 3 простых шага",
+		"list": {
+			"chooseDestination": {
+				"title": "Выберите направление",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+			},
+			"makePayment": {
+				"title": "Сделайте оплату",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+			},
+			"reachAirport": {
+				"title": "Доберитесь до аэропорта",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+			}
+		}
+	},
+	"testimonials": {
+		"title": "Отзывы",
+		"subtitle": "Что говорят люди о нас."
+	},
+	"contact": {
+		"title": "Подпишитесь на получение информации, последних новостей и других интересных предложений о Jadoo",
+		"email": "Ваш email",
+		"button": "Подписаться"
+	},
+	"footer": {
+		"description": "Забронируйте свою поездку за 3 простых шага",
+		"contact": {
+			"title": "Контакты",
+			"help": "Помощь/FAQ",
+			"press": "Пресса",
+			"affilates": "Аффилиаты"
+		},
+		"company": {
+			"title": "Компания",
+			"about": "О нас",
+			"careers": "Карьера",
+			"mobile": "Мобильное приложение"
+		},
+		"more": {
+			"title": "Больше",
+			"airlinefees": "Авиасборы",
+			"airline": "Авиакомпании",
+			"lowfaretips": "Советы по низким ценам"
+		},
+		"discover": "Откройте для себя наше приложение"
+	}
+}
