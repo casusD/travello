@@ -22,7 +22,7 @@ const Contact = async ({ t }: PageProps) => {
 					<input
 						type='email'
 						placeholder={t.email}
-						className='w-[421px] h-[68px] pl-[4rem] rounded-[10px] border-none outline-none placeholder:text-[#39425D] text-lg'
+						className='w-[421px] h-[68px] pl-[4rem] rounded-[10px] border-none outline-none placeholder:text-[#39425D] text-lg bg-white'
 					/>
 					<button
 						type='submit'
